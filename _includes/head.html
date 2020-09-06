@@ -75,6 +75,43 @@
   {% endif %}
   <!-- End SEO Tag -->
 
+  <!-- 네이버 연관 채널 -->
+  <script type="application/ld+json">
+{
+ "@context": "http://schema.org",
+ "@type": "Person",
+ "name": "{{ site.title }}",
+ "url": "{{ site.url }}",
+ "sameAs": [
+   "https://www.facebook.com/myfacebook",
+   "http://blog.naver.com/myblog",
+   "http://storefarm.naver.com/mystore"
+ ]
+}
+
+</script>
+
+  <!-- End 네이버 연관 채널 -->
+
+  <!-- 구조화된 데이터 -->
+  {% if page.feature %}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "headline": "{{ page.title }}",
+      "image": [
+        "{{ site.github.url }}{{ page.feature }}"
+       ],
+      "datePublished": "{{ page.date }}"
+    }
+    </script>
+    {% endif %}
+    <!-- End 구조화된 데이터-->
+
+    <meta name="naver-site-verification" content="1f790c636fbc1c4495fa2872e61d988af44478d2" />
+
+
   <!-- Favicon Tag -->
   <link rel="apple-touch-icon" sizes="57x57" href="{{ site.github.url }}/img/icon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="{{ site.github.url }}/img/icon/apple-icon-60x60.png">
@@ -94,5 +131,5 @@
   <meta name="msapplication-TileImage" content="{{ site.github.url }}/img/icon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
   <!-- End Favicon Tag -->
-  
+
 </head>
