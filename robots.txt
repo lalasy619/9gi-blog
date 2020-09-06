@@ -2,3 +2,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://slifelab.com/sitemap.xml
+
+DaumWebMasterTool:308339efcd08b43760cd2557404c1c3106d64af95cf33191e1675be6b53214cd:8+R9pCGyucsS10vXk/Zuog==
