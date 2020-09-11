@@ -6,7 +6,7 @@ date: 2020-08-23 11:30:00 +09:00
 feature: '/img/posts/01/1_thumbnail.jpg'
 background: '/img/posts/01/1.bgimg.jpg'
 categories:
-   - blog
+   - dailylife
 tags:
    - 블로그시작
    - 마케팅
