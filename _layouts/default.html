@@ -9,14 +9,24 @@
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N2R8TPT"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-  
+
   {% include navbar.html %}
 
   {{ content }}
 
+  {% if post.html %}
+  <script type="text/javascript">
+  dataLayer.push({
+  'event' : 'postView'
+  'name' : {{page.title}}
+  })
+  </script>
+  {endif}
+
   {% include footer.html %}
 
   {% include scripts.html %}
+
 
 </body>
 
