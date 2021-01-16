@@ -53,6 +53,13 @@ layout: default
 
 {% include disqus.html %}
 
+<script type="text/javascript">
+dataLayer.push({
+'event' : 'pageView'
+'name' : {{ page.title }}
+})
+</script>
+
 <script>
   var title = "{{ page.title }}";
   gtag('event', title, {'event_category': '글 보기'});
